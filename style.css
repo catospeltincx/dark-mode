@@ -1,0 +1,50 @@
+h1 {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  font-size: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+.theme-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+#dark-mode-toggle {
+  /* display: none; */
+}
+
+.switch {
+  cursor: pointer;
+}
+
+#dark-mode-toggle:checked {
+  background-color: black;
+  color: white;
+}
+
+/* Dark mode als checkbox is aangevinkt */
+#dark-mode-toggle:checked ~ .theme-wrapper {
+  background-color: black;
+  color: white;
+}
+
+/* #dark-mode-toggle:checked + .switch .toggle {
+  background: white;
+} */
+
+/* #dark-mode-toggle:checked + .switch .toggle::before {
+  background: black;
+  left: 27px;
+} */
