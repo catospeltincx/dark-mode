@@ -21,30 +21,40 @@ body {
   height: 100vh;
 }
 
-#dark-mode-toggle {
-  /* display: none; */
+#dark-mode-button {
+  display: none;
 }
 
-.switch {
+i {
+  position: absolute;
+  font-style: normal;
+  font-size: 50px;
   cursor: pointer;
+  padding: 15px;
+  text-align: center;
+  width: 100vw;
 }
 
-#dark-mode-toggle:checked {
-  background-color: black;
-  color: white;
+.sun {
+  opacity: 0;
 }
 
+.moon {
+  color: black;
+}
+
+/* Alles met dark mode:checked is wat er in dark mode veranderd */
 /* Dark mode als checkbox is aangevinkt */
-#dark-mode-toggle:checked ~ .theme-wrapper {
+#dark-mode-button:checked ~ .theme-wrapper {
   background-color: black;
   color: white;
 }
 
-/* #dark-mode-toggle:checked + .switch .toggle {
-  background: white;
-} */
+#dark-mode-button:checked ~ .symbols .moon {
+  opacity: 0;
+}
 
-/* #dark-mode-toggle:checked + .switch .toggle::before {
-  background: black;
-  left: 27px;
-} */
+#dark-mode-button:checked ~ .symbols .sun {
+  opacity: 100;
+  color: white;
+}

@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="checkbox" id="dark-mode-toggle" />
+    <!-- id van input & for van label moeten dezelfde naam hebben -->
+    <input type="checkbox" id="dark-mode-button" />
+    <label for="dark-mode-button" class="symbols">
+      <i class="moon">&#9790;</i>
+      <i class="sun">&#9788;</i>
+    </label>
+
     <div class="theme-wrapper">
       <h1>hello world</h1>
-      <label class="switch">
-        <span class="toggle"></span>
-        Dark Mode
-      </label>
     </div>
   </body>
 </html>
