@@ -58,3 +58,20 @@ i {
   opacity: 100;
   color: white;
 }
+
+/* image frame toevoegen */
+img {
+  width: 100px;
+}
+
+.img-wrapper {
+  position: fixed;
+  display: flex;
+  top: 20%;
+  left: 40%;
+  font-size: 50px;
+}
+
+#dark-mode-button:checked ~ .img-wrapper img {
+  filter: grayscale(100%);
+}
